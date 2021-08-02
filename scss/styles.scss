@@ -22,5 +22,14 @@ html {
 	margin: 0;
 }
 body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
 	background: $background;
+}
+.container {
+	width: 85%;
+	background-color: $lightGrayishBlue;
+	border-radius: 2rem;
 }
