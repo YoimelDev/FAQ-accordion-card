@@ -7,3 +7,20 @@ $background: linear-gradient(#af67e9, #6565e7);
 $veryDarkGrayishBlue: hsl(237, 12%, 33%);
 $darkGrayishBlue: hsl(240, 6%, 50%);
 $lightGrayishBlue: hsl(240, 5%, 91%);
+
+html {
+	height: 100%;
+	font-size: 62.5%;
+	box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+* {
+	margin: 0;
+}
+body {
+	background: $background;
+}
