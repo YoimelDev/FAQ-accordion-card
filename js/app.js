@@ -3,12 +3,14 @@ document.addEventListener('DOMContentLoaded', () => {
 })
 
 function cargar() {    
-    const mostrar = document.querySelectorAll('.content__faq__box');    
+    const mostrar = document.querySelectorAll('.content__faq__box');
+    const title = document.querySelectorAll('.content__faq__box__title');
         
         mostrar.forEach((box) => {          
             box.addEventListener('click', () => {  
                 removeMostrar();                
-                box.classList.add('mostrar');                
+                box.classList.add('mostrar');
+                agregarMostrar(box);                      
             })    
         })
 
@@ -17,5 +19,15 @@ function cargar() {
                 box.classList.remove('mostrar');  
             })
         }
+
+        function agregarMostrar(box){
+            title.forEach((title) => {
+                title.parentNode.addEventListener('click', () => {
+                    title.parentNode.classList.toggle('mostrar');
+                })                    
+            })
+        }
+
+        
 }
 
