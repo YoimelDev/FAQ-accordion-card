@@ -30,8 +30,8 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 100vh;
-	margin: 10rem 0;
+	height: 95vh;
+	margin-top: 10rem;
 }
 .container {
 	width: 85%;
@@ -153,9 +153,14 @@ body {
 }
 
 .attribution {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 5vh;
+	gap: 0.5rem;
 	font-size: 1.2rem;
-	margin-top: 5rem;
 }
+
 @media (min-width: 1200px) {
 	.main {
 		margin: 0;
