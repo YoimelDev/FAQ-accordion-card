@@ -49,6 +49,10 @@ body {
 			}
 		}
 	}
+	&__img__desktop,
+	.box--desktop {
+		display: none;
+	}
 
 	@keyframes float {
 		0% {
@@ -136,6 +140,78 @@ body {
 			&.mostrar &__text {
 				height: 5.9rem;
 			}
+		}
+	}
+}
+
+@media (min-width: 1024px) {
+	body {
+		margin: 0;
+	}
+	.container {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		width: 70%;
+		position: relative;
+
+		.box--desktop {
+			display: block;
+			position: absolute;
+			top: 18.7rem;
+			left: -9.2rem;
+			z-index: 2;
+			animation: float 6s ease-in-out infinite;
+
+			@keyframes float {
+				0% {
+					transform: translatex(0px);
+				}
+				50% {
+					transform: translatex(-40px);
+				}
+				100% {
+					transform: translatex(0px);
+				}
+			}
+		}
+		&__img {
+			display: none;
+		}
+		&__img__desktop {
+			display: block;
+			position: relative;
+			overflow: hidden;
+
+			img {
+				position: absolute;
+			}
+
+			:nth-child(1) {
+				top: 5rem;
+				left: -8rem;
+				z-index: 1;
+			}
+			:nth-child(2) {
+				top: -32rem;
+				left: -57rem;
+				z-index: 0;
+			}
+		}
+	}
+
+	.content {
+		margin: 0;
+		height: 40rem;
+		margin: 5rem 0;
+		padding-right: 13rem;
+
+		h1 {
+			text-align: left;
+			font-size: 3rem;
+		}
+
+		&__faq {
+			width: 100%;
 		}
 	}
 }
