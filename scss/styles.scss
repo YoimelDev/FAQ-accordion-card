@@ -66,32 +66,62 @@ body {
 			border-bottom: 1px solid $lightGrayishBlue;
 			margin-bottom: 2rem;
 
+			&.mostrar &__title {
+				h2 {
+					font-weight: 700;
+					color: $veryDarkBlue;
+				}
+			}
+
 			&__title {
 				display: flex;
 				justify-content: center;
 				align-items: center;
-
 				gap: 3rem;
 
 				h2 {
 					font-size: 1.2rem;
+					font-weight: 400;
 					color: $veryDarkGrayishBlue;
 				}
 
 				img {
 					height: 1rem;
 				}
+
+				&:hover {
+					cursor: pointer;
+					h2 {
+						color: $softRed !important;
+					}
+				}
+
+				.arrow {
+					transition: all 1s ease-in;
+				}
 			}
 
-			&__text {
-				display: none;
+			&.mostrar {
+				.arrow {
+					transform: rotateZ(-180deg);
+				}
+			}
+
+			& &__text {
+				overflow: hidden;
+				height: 0;
 				color: $darkGrayishBlue;
+				transition: all 1s ease-in-out;
 
 				p {
 					margin-top: 0.5rem;
 					margin-bottom: 1.5rem;
 					font-size: 1.2rem;
 				}
+			}
+
+			&.mostrar &__text {
+				height: 5.9rem;
 			}
 		}
 	}
