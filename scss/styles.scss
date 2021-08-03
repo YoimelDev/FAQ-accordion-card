@@ -27,9 +27,30 @@ body {
 	align-items: center;
 	height: 100vh;
 	background: $background;
+	font-family: 'Kumbh Sans';
 }
 .container {
 	width: 85%;
 	background-color: $lightGrayishBlue;
 	border-radius: 2rem;
+
+	&__img {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		img {
+			position: absolute;
+			&:first-child {
+				top: -10.6rem;
+			}
+		}
+	}
+}
+
+.content {
+	margin-top: 14rem;
+	text-align: center;
+	font-size: 1.8rem;
 }
