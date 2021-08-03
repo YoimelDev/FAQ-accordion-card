@@ -9,7 +9,6 @@ $darkGrayishBlue: hsl(240, 6%, 50%);
 $lightGrayishBlue: hsl(240, 5%, 91%);
 
 html {
-	height: 100%;
 	font-size: 62.5%;
 	box-sizing: border-box;
 }
@@ -27,6 +26,7 @@ body {
 	justify-content: center;
 	align-items: center;
 	height: 100vh;
+	margin-top: 6rem;
 	background: $background;
 	font-family: 'Kumbh Sans';
 }
