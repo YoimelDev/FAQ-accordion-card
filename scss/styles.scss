@@ -97,7 +97,7 @@ body {
 				}
 
 				.arrow {
-					transition: all 1s ease-in;
+					transition: all 0.5s ease-in;
 				}
 			}
 
@@ -111,7 +111,7 @@ body {
 				overflow: hidden;
 				height: 0;
 				color: $darkGrayishBlue;
-				transition: all 1s ease-in-out;
+				transition: all 0.5s ease-in-out;
 
 				p {
 					margin-top: 0.5rem;
